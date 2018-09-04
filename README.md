@@ -1,5 +1,6 @@
 # Multi-GAN
 An attempt at extending the Dual-GAN to more than two generator-discriminator pairs for unsupervised image-image translation.
+This work was done as part of the Advanced Machine Learning (CSE 674) course taught at UB, by Prof. Sargur Srihari.
 
 
 ######################
