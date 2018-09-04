@@ -6,19 +6,24 @@ An attempt at extending the Dual-GAN to more than two generator-discriminator pa
 
 To run the multi-gan implementation, run: 
 
-Train:
+* Train:
+```
 python main_multigan.py --phase train --dataset_name materials --image_size 256 --epoch 45 --lambda 20.0 --channels 3 --batch_size 2
-Test:
+```
+* Test:
+```
 python main_multigan.py --phase test --dataset_name materials --image_size 256 --epoch 45 --lambda 20.0 --channels 3 --batch_size 2
-
+```
 To run the vanilla implementation, run:
 
-Train:
+* Train:
+```
 python main.py --phase train --dataset_name sketch-photo --image_size 256 --epoch 45 --lambda_A 20.0 --lambda_B 20.0 --A_channels 1 --B_channels 1
-
-Test:
+```
+* Test:
+```
 python main.py --phase test --dataset_name sketch-photo --image_size 256 --epoch 45 --lambda_A 20.0 --lambda_B 20.0 --A_channels 1 --B_channels 1
-
+```
 ########################
  # ICCV paper of DualGAN
 <a href="https://arxiv.org/abs/1704.02510">DualGAN: unsupervised dual learning for image-to-image translation</a>
